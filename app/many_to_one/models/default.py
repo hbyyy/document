@@ -11,7 +11,6 @@ class Manufacturer(models.Model):
 
 
 class Car(models.Model):
-
     manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
     name = models.CharField('차량명', max_length=20)
 
